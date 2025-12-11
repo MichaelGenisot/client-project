@@ -1,0 +1,68 @@
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.calendar-dates div {
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ddd;
+}
+.calendar {
+    width: 300px;
+}
+body {
+    font-family: "Lexend", Verdana, Geneva, Tahoma, sans-serif;
+}
+.hamburger {
+    width: 40px;
+    padding: .5rem;
+}
+.hamburger hr {
+    margin: .75rem 0;
+    border: 2px solid #fff;
+}
+header>nav {
+    background-color: #0b132b;
+    position: fixed;
+    width: 100%;
+    top: 4.75rem;
+    left: -100%;
+    transition-property: left;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+header>nav>a {
+    display: block;
+    color: #00e3c8;
+    text-align: center;
+    text-decoration: none;
+    padding: 3rem;
+    border: 1px solid #5bc0b4;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0b132b85;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+header nav.show {
+    left: 0;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 4.75rem;
+    position: fixed;
+    background-color: #0b132b65;
+    transition-property: left;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    left: -100%;
+}
+.overlay.show {
+    left: 0;
+}

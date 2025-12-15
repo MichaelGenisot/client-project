@@ -22,7 +22,7 @@ body {
     border: 2px solid #fff;
 }
 header>nav {
-    background-color: #0b132b;
+    background-color: #fff;
     position: fixed;
     width: 100%;
     top: 4.75rem;
@@ -33,18 +33,17 @@ header>nav {
 }
 header>nav>a {
     display: block;
-    color: #00e3c8;
+    color: #0b5351;
     text-align: center;
     text-decoration: none;
     padding: 3rem;
-    border: 1px solid #5bc0b4;
+    border: 1px solid #0b5351;
 }
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #0b132b85;
-    position: fixed;
+    background-color: #0b5351;
     z-index: 1;
     top: 0;
     width: 100%;
@@ -65,4 +64,188 @@ header nav.show {
 }
 .overlay.show {
     left: 0;
+}
+header img {
+    display: none;
+}
+.intro {
+    background-image: url(images/Home.png);
+    background-size: cover;
+    color: #fff;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    padding-bottom: 4rem;
+    margin: 0;
+}
+.intro img {
+    width: 20rem;
+    display: block;
+    padding: 1rem;
+}
+.intro>p {
+    margin: 2rem;
+}
+.bbooknow {
+    background-color: #fff;
+    color: #0b5351;
+    padding: 1rem;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    display: block;
+}
+.promo {
+    background-color: #092327;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+}
+.promo h3 {
+    font-family: "BBH Bartle", Arial, Helvetica, sans-serif;
+    font-size: .7rem;
+}
+.promo h2 {
+    font-family: "BBH Bartle", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+.artist img {
+    max-width: 25%;
+    margin: 1rem;
+}
+.artist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social img {
+    height: 3rem;
+    margin: .25rem;
+}
+footer {
+    background-color: #0b5351;
+    text-align: center;
+    color: #fff;
+    padding: .25rem;
+}
+.social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.story {
+    background-image: url(images/Building.webp);
+    background-size: cover;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.story>p {
+    background-color: #0b132b80;
+    margin: 0;
+}
+.story>h2 {
+    background-color: #0b132b80;
+    margin: 0;
+    font-size: 3rem;
+}
+.goal {
+    background-color: #0b5351;
+    background-size: cover;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.goal>ol {
+    margin: 0;
+    text-align: left;
+}
+.goal>h2 {
+    margin: 0;
+    font-size: 3rem;
+}
+.studio {
+    background-image: url(images/LeStudiowebp.webp);
+    background-size: cover;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.studio>p {
+    background-color: #0b132b80;
+    margin: 0;
+}
+.studio>h2 {
+    background-color: #0b132b80;
+    margin: 0;
+    font-size: 3rem;
+}
+.member img {
+    width: 8rem;
+    margin: 1rem;
+}
+.member {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #0b5351;
+    margin: 1rem;
+}
+.member h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.2rem;
+}
+.member h4 {
+    margin: 0;
+    padding: 0.2rem;
+}
+.team>h2 {
+    margin: 2rem;
+    font-size: 3rem;
+    color: #0b5351;
+    text-align: center;
+}
+.record {
+    background-image: url(images/Record.webp);
+    background-size: cover;
+    color: #fff;
+    justify-content: center;
+    margin: 0;
+}
+.record>h2 {
+    font-size: 3rem;
+    background-color: #0b132b80;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.record>div>h3 {
+    font-size: 2.5rem;
+    background-color: #0b132b80;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    margin-top: 2rem;
+}
+.record>div>p {
+    font-size: 1rem;
+    background-color: #0b132b80;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+.record>h3 {
+    font-size: 2rem;
+    background-color: #0b132b80;
+    text-align: center;
+    padding: 2rem;
+}
+.record img {
+    display: block;
+    max-width: 80%;
+    padding: 5rem;
+    margin: auto;
 }

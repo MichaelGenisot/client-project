@@ -6,9 +6,30 @@
         padding: 20px;
         text-align: center;
         border: 1px solid #ddd;
+        background-color: #fff;
 }
 .calendar {
-    width: 300px;
+    width: 100%;
+}
+.calendar-header{
+    text-align: center;
+    background-color: #0b5351;
+    color: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.calendar-days {
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     background-color: #49A078;
+     color: white;
+     text-align: center;
+     place-items: center;
+}
+.today {
+    background-color: #0b5351;
+    font-weight: bold;
+    color: #fff;
 }
 body {
     font-family: "Lexend", Verdana, Geneva, Tahoma, sans-serif;
@@ -66,7 +87,8 @@ header nav.show {
     left: 0;
 }
 header img {
-    display: none;
+    width: 8rem;
+    margin-right: 1rem;
 }
 .intro {
     background-image: url(images/Home.png);
@@ -248,4 +270,77 @@ footer {
     max-width: 80%;
     padding: 5rem;
     margin: auto;
+}
+.service {
+    background-color: #0b5351;
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.service img {
+    width: 11rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.service h3 {
+    text-align: center;
+    padding-top: 0.5rem;
+}
+.service>div {
+    display: flex;
+}
+.pricing {
+    font-size: 2rem;
+    text-align: center;
+    color: #0b5351;
+}
+form {
+    padding: 1rem;
+    color: #fff;
+}
+label, input[type=text], [type=email], textarea {
+    display: block;
+    margin: .5rem 0;
+}
+input[type=text], [type=email], textarea {
+    width: 95%;
+    padding: .5rem;
+    font-size: 1rem;
+    border: 1px solid transparent;
+}
+textarea {
+    height: 5rem;
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    color: #0b132b;
+}
+input:focus[type=text], input:focus[type=email], textarea:focus {
+    outline: none;
+    border: 1px solid #0b5351;
+}
+.acal {
+    margin: 0;
+    background-color: #092327;
+    padding: 1rem;
+}
+.acal>h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+input[type=submit] {
+    background-color: #49A078;
+    color: #fff;
+    border: none;
+    padding: .7rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: auto;
+    display: block;
+    margin-top: 2rem;
+}
+input:hover[type=submit] {
+    background-color: #0b5351;
 }

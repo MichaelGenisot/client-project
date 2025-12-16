@@ -10,6 +10,7 @@
 }
 .calendar {
     width: 100%;
+    max-width: 700px;
 }
 .calendar-header{
     text-align: center;
@@ -27,9 +28,8 @@
      place-items: center;
 }
 .today {
-    background-color: #0b5351;
     font-weight: bold;
-    color: #fff;
+    color: #0b5351;
 }
 body {
     font-family: "Lexend", Verdana, Geneva, Tahoma, sans-serif;
@@ -59,6 +59,9 @@ header>nav>a {
     text-decoration: none;
     padding: 3rem;
     border: 1px solid #0b5351;
+}
+header>nav>a:hover {
+    color: #49A078;
 }
 header {
     display: flex;
@@ -115,6 +118,10 @@ header img {
     text-decoration: none;
     margin-bottom: 3rem;
     display: block;
+}
+.bbooknow:hover {
+    background-color: #49A078;
+    color: #fff;
 }
 .promo {
     background-color: #092327;
@@ -179,9 +186,13 @@ footer {
     padding: 1rem;
     text-align: center;
 }
-.goal>ol {
+.goal>div>ol {
     margin: 0;
     text-align: left;
+}
+.goal>div>h2 {
+    margin: 0;
+    font-size: 3rem;
 }
 .goal>h2 {
     margin: 0;
@@ -243,18 +254,18 @@ footer {
     padding: 1rem;
     text-align: center;
 }
-
-.record>div>h3 {
-    font-size: 2.5rem;
+.record>div {
     background-color: #0b132b80;
+}
+.record>div>div>h3 {
+    font-size: 2.5rem;
     text-align: center;
     padding: 1rem;
     margin: 0;
     margin-top: 2rem;
 }
-.record>div>p {
+.record>div>div>p {
     font-size: 1rem;
-    background-color: #0b132b80;
     text-align: center;
     margin: 0;
     padding-bottom: 1rem;
@@ -308,6 +319,7 @@ input[type=text], [type=email], textarea {
     padding: .5rem;
     font-size: 1rem;
     border: 1px solid transparent;
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
 }
 textarea {
     height: 5rem;
@@ -343,4 +355,244 @@ input[type=submit] {
 }
 input:hover[type=submit] {
     background-color: #0b5351;
+}
+.create {
+    background-color: #0b5351;
+    background-size: cover;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.create>h2 {
+    margin: 0;
+    font-size: 3rem;
+}
+@media (min-width:1000px) {
+.hamburger {
+        display: none;
+    }
+    header>nav {
+        position: static;
+        background-color: unset;
+        width: unset;
+    }
+    header>nav>a {
+        border: none;
+        padding: 2rem;
+        display: inline-block;
+        color: #fff;
+    }
+    header>nav>div {
+        border: none;
+        padding: 2rem;
+        display: inline-block;
+    }
+    header img {
+        margin-right: 0;
+        margin-left: 2rem;
+    }
+    .abooknow {
+        background-color: #fff;
+    color: #0b5351;
+    padding: 1rem;
+    text-decoration: none;
+    margin-right: 1rem;
+    }
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80% auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .intro img {
+        grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start:1;
+        grid-row-end:2;
+        width: 30rem;
+    }
+    .intro>p {
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:1;
+        grid-row-end:2;
+    }
+    .promo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .testamonials>div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;      
+}
+.testamonials>h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+.artist {
+    display: block;
+    padding: 1rem;
+}
+.artist img {
+    width: 30rem;
+    max-width: 100%;
+    margin: 0;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 75% auto;
+}
+.add {
+    grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start:2;
+        grid-row-end:3;
+        padding-bottom: 3rem;
+        margin: 0;
+}
+.fll {
+    font-size: 3rem;
+}
+.social img {
+    height: 5rem;
+}
+.story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+.story>h2 {
+    padding: 4rem;
+    font-size: 4rem;
+}
+.story>p {
+    padding: 1rem;
+}
+.goal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+.goal>div {
+    grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start:1;
+        grid-row-end:2;
+}
+.goal>h2 {
+    font-size: 4rem;
+}
+.studio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+.studio>h2 {
+    padding: 4rem;
+    font-size: 3.85rem;
+}
+.studio>p {
+    padding: 1rem;
+}
+.team>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.record>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.record>div>div>h3 {
+    font-size: 3rem;
+}
+.record {
+    padding-bottom: 20rem;
+}
+.record>h3 {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+}
+.record>h2 {
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+.gridp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.service {
+    margin: 1rem;
+}
+.service>h3 {
+    margin: 0.5rem;
+}
+.create {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 5rem;
+}
+.create>div {
+    grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start:1;
+        grid-row-end:2;
+}
+.create>h2 {
+    font-size: 4rem;
+}
+.create>p {
+    font-size: 1.2rem;
+}
+.gridc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 20rem;
+}
+.calendar {
+    grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:1;
+        grid-row-end:2;
+}
+.acal>h2 {
+    font-size: 4rem;
+    
+}
+.abooknow:hover {
+    background-color: #49A078;
+    color: #fff;
+}
+.contact {
+    margin-left: 3rem;
+}
+}
+@media (min-width:1300px) {
+    .story {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .goal {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .studio {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
 }
